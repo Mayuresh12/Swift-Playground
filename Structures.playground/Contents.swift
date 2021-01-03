@@ -58,3 +58,17 @@ num1.willSetNumber = 23
 // here whenever we change the value of the number propetty observer didset prints the statement.
 
 
+//MARK: methods
+
+struct Profile {
+    
+    var firtName: String
+    var lastName: String
+    
+    func fullName() -> String {
+        return "My name is \(firtName) \(lastName)"
+    }
+}
+
+let a = Profile(firtName: "John", lastName: "Doe")
+print("\(a.fullName())")
