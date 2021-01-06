@@ -72,3 +72,17 @@ struct Profile {
 
 let a = Profile(firtName: "John", lastName: "Doe")
 print("\(a.fullName())")
+
+
+// Mutating Methods
+// By default the properties in struct are const if you want to modify the values add mutating keyword at the start
+
+struct School {
+    var name: String
+    mutating func theSchoolName(){
+        name = "xyz"
+    }
+}
+
+var mySchoolName = School(name: "Modern School")
+print("My School name is \(mySchoolName.name)")
