@@ -86,3 +86,36 @@ struct School {
 
 var mySchoolName = School(name: "Modern School")
 print("My School name is \(mySchoolName.name)")
+
+
+// Properties of string. String and Array use structs
+
+let string = "How are you?."
+print(string.uppercased())
+
+
+// Struct initializers
+
+struct name1 {
+    var firstName : String
+}
+
+let firstName1 = name1(firstName: "John")
+
+print(firstName1)
+
+struct name2 {
+    var firstName : String
+    
+    init() {
+        firstName = "firstName"
+        print("firstName has been created")
+    }
+}
+
+var b = name2()
+print("the default value for name \(b.firstName)")
+b.firstName = "John Doe"
+print("the default value for name \(b.firstName)")
+
+
