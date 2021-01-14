@@ -118,4 +118,35 @@ print("the default value for name \(b.firstName)")
 b.firstName = "John Doe"
 print("the default value for name \(b.firstName)")
 
+// refering to the current instance
 
+struct Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var person1 = Person(name: "Jon")
+print("The value of the current instance \(person1.name)")
+
+
+// Lazy initializer in Struct
+
+struct Personalprofile {
+    init() {
+        print("This is my profile..")
+    }
+}
+
+struct LazyVar {
+    var name: String
+    lazy var personalProfile = Personalprofile()
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var p = LazyVar(name: "LazyOno")
+
+print("lazy var name = \(p.name)")
