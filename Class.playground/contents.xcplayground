@@ -3,5 +3,7 @@
     <pages>
         <page name='Creating_Class'/>
         <page name='Class_Inheritance'/>
+        <page name='Overiding_Methods'/>
+        <page name='Final_class'/>
     </pages>
 </playground>
